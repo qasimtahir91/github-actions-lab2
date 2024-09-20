@@ -13,9 +13,9 @@ jobs:
           - 3.7
           - 3.8
           - 3.9
-        exclude:
-          - py-version: 3.9
-          - os: macos-12 
+        exclude: #added
+        - os: macos-12 #added
+          py-version: 3.9 #added 
     runs-on: '${{ matrix.os }}'
     steps:
       - name: Set up Python
